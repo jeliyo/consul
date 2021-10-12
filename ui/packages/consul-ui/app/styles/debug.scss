@@ -10,6 +10,18 @@
 @import 'consul-ui/components/inline-alert/debug';
 @import 'consul-ui/components/definition-table/debug';
 
+#docfy-demo-preview-css-props {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  figure {
+    width: 140px;
+    height: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
 html.is-debug body > .brand-loader {
   display: none !important;
 }

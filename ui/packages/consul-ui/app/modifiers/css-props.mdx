@@ -1,0 +1,23 @@
+# Color Swatches
+
+
+```hbs preview-template
+<ul
+  {{css-props (set this 'props')}}
+>
+{{#each-in this.props as |prop value|}}
+{{#if (string-starts-with prop '--tone-')}}
+  <li>
+    {{#each-in value as |prop value|}}
+    <figure
+      {{with-copyable (concat "rgb(var(" prop "));")}}
+      style={{concat "background-color: rgb(" value ")"}}
+    >
+      <figcaption>{{prop}}</figcaption>
+    </figure>
+    {{/each-in}}
+  </li>
+{{/if}}
+{{/each-in}}
+</ul>
+```
