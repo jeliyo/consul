@@ -10,7 +10,7 @@
 @import 'consul-ui/components/inline-alert/debug';
 @import 'consul-ui/components/definition-table/debug';
 
-#docfy-demo-preview-css-props {
+#docfy-demo-preview-colors {
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -20,6 +20,7 @@
     height: 40px;
     margin-right: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
   }
 }
 html.is-debug body > .brand-loader {
